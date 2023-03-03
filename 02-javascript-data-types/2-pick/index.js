@@ -5,14 +5,13 @@
  * @returns {object} - returns the new object
  */
 
-const fruits = {
-    apple: 2,
-    orange: 4,
-    banana: 3
-   };
-const pick = (obj, ...fields) => {
+export const pick = (obj, ...fields) => {
     let result = {};
-    Object.entries(obj)
+    let sol = Object.entries(obj);
+    for (const [key, value] of sol){
+        if (fields.includes(key)){
+        result[key] = value;        
+        }
+    }
+    return result
 };
-
-console.log(pick(fruits, 'apple', 'banana'));
