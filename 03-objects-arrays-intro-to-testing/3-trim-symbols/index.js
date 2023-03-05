@@ -7,7 +7,7 @@
 export function trimSymbols(string, size) {
     const arr = Array.from(string);
     let counter = 1;
-    let result = [];
+    const result = [];
 
     if (size === 0){
         return result.join();
