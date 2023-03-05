@@ -6,7 +6,7 @@
  */
 
 export const pick = (obj, ...fields) => {
-    let result = {};
+    const result = {};
     let sol = Object.entries(obj);
     for (const [key, value] of sol){
         if (fields.includes(key)){
