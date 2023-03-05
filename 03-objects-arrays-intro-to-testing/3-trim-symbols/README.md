@@ -7,11 +7,6 @@
 Функция должна вернуть строку символов, удалив из нее все последовательные одинаковые 
 символы которые превышают заданное число.
 
-  × should remove an identical consecutive characters that exceed the specified size (6ms)
-    √ should return empty string if it was passed to function like an argument
-    × should return empty string if "size" equal 0 (1ms)
-    × should return the same string if "size" parameter wasn't specified (1ms)
-
 
 **Внимание:** В решении НЕ должны использоваться регулярные выражения. 
 
