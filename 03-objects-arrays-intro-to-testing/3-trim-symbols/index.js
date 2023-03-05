@@ -5,5 +5,27 @@
  * @returns {string} - the new string without extra symbols according passed size
  */
 export function trimSymbols(string, size) {
+    let arr = Array.from(string);
+    let counter = 1;
+    let result = [];
 
+    if (size === 0){
+        return result.join();
+    };
+    if (size === undefined){
+        return string;
+    };
+
+    for (let i = 0; arr.length > i; i++){
+        if(arr[i] === arr[i+1]){
+            counter++
+                if (counter <= size){
+                    result.push(arr[i]);
+                }   
+        } else {
+            result.push(arr[i]);
+            counter = 1;    
+        } 
+    }
+    return result.join("");
 }
