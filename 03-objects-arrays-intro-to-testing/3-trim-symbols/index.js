@@ -5,9 +5,9 @@
  * @returns {string} - the new string without extra symbols according passed size
  */
 export function trimSymbols(string, size) {
-    let arr = Array.from(string);
+    const arr = Array.from(string);
     let counter = 1;
-    let result = [];
+    const result = [];
 
     if (size === 0){
         return result.join();
