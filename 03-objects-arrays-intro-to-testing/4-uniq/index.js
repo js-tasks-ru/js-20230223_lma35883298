@@ -5,7 +5,11 @@
  */
 
 export function uniq(arr) {
+<<<<<<< HEAD
     let result = [];
+=======
+    const result = [];
+>>>>>>> e2c2a7d7dcaee5d93a4d8eda84ec56e67972df1f
     if (arr === [] || arr === undefined){
         return result
     };

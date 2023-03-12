@@ -5,13 +5,13 @@
  */
 export function invertObj(obj) {
     if (obj === undefined){
-        return undefined
+        return;
     }
     let result = {};
     let sol = Object.entries(obj);
     for (const [key, value] of sol){
-        if (value === `undefined`){
-            return result
+        if (value === undefined){
+            return result;
         }
         result[value] = key;
     };

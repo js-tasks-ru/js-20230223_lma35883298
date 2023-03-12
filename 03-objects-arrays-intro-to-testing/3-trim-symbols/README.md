@@ -7,11 +7,14 @@
 Функция должна вернуть строку символов, удалив из нее все последовательные одинаковые 
 символы которые превышают заданное число.
 
+<<<<<<< HEAD
   × should remove an identical consecutive characters that exceed the specified size (6ms)
     √ should return empty string if it was passed to function like an argument
     × should return empty string if "size" equal 0 (1ms)
     × should return the same string if "size" parameter wasn't specified (1ms)
 
+=======
+>>>>>>> e2c2a7d7dcaee5d93a4d8eda84ec56e67972df1f
 
 **Внимание:** В решении НЕ должны использоваться регулярные выражения. 
 
